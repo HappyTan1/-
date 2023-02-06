@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>&#128248; | Memories</title>
+		<link rel="stylesheet" href="./520/Album.css" />
+		<style>
+		*{
+		   cursor:url("./520/1.ico"),auto;
+		}
+		</style>
+	</head>
+	<body>
+		
+		 <script type='text/javascript' src="./520/sakura.js"></script> 
+		<audio id="audio" >
+				<source src="./520/Taylor Swift Begin Again Piano Guys live.mp3" type="audio/mp3" />
+		</audio>  
+		<!--/*外层最大容器*/-->
+		<div class="wrap">
+	<!--	/*包裹所有元素的容器*/-->
+		<div class="cube">
+			<!--前面图片 -->
+			<div class="out_front">
+				<img src="img/1.jpg"  class="pic"/>
+			</div>
+			<!--后面图片 -->
+			<div class="out_back">
+				<img src="img/2.jpg"  class="pic"/>
+			</div>
+			<!--左图片 -->
+			<div class="out_left">
+				<img src="img/3.jpg"  class="pic"/>
+			</div>
+			<div class="out_right">
+				<img src="img/4.jpg"  class="pic"/>
+			</div>
+			<div class="out_top">
+				<img src="img/5.jpg"  class="pic"/>
+			</div>
+			<div class="out_bottom">
+				<img src="img/6.jpg"  class="pic"/>
+			</div>
+			<!--小正方体 --> 
+			<span class="in_front">
+				<img src="img/7.jpg" class="in_pic" />
+			</span>
+			<span class="in_back">
+			     <img src="img/8.jpg" class="in_pic" />
+			</span>
+			<span class="in_left">
+				<img src="img/9.jpg" class="in_pic" />
+			</span>
+			<span class="in_right">
+				<img src="img/10.jpg" class="in_pic" />
+			</span>
+			<span class="in_top">
+				<img src="img/11.jpg" class="in_pic" />
+			</span>
+			<span class="in_bottom">
+				<img src="img/12.jpg" class="in_pic" />
+			</span>
+		</div>
+		</div>
+		<script>
+		//单个网页实现单击屏幕发出声音
+		        function playSound(){
+		            var audio=document.getElementById("audio");
+		            if(audio.paused) {  //如果音频是暂停状态
+		                audio.load;     //加载音频文件
+		                audio.play();	//播放
+		            }else {             //否则，也就是说音频是播放状态
+		                pass /* audio.pause();  //就暂停 */
+		            }
+		        }
+		        //调用
+		        window.onclick=function () {
+		            playSound();
+		        }
+		    </script>
+		
+	</body>
+</html>
